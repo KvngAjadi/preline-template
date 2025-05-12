@@ -270,14 +270,85 @@ body {
     }
     .line {
         margin-left: 100px;
+        color: white;
+        display: flex;
+        }
         .line, img {
             border-radius: 10px;
             margin-left: 65px;
             margin-top: 20px;
 
-            .line, try {
+        }
+        .right {
+            color: white;
+            background-color: transparent;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-top: 22px;
+            margin-left: 50px;
+            .right, p {
+                color: yellow;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+          }
+          
+          .steps li {
+            margin-bottom: 60px;
+            counter-increment: step;
+            list-style: none;
+            position: relative;
+            padding-left: 50px;
+            color: gray;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+            .steps, li, strong {
                 color: white;
             }
-        }
+          }
+            .steps li::before {
+            content: counter(step);
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: transparent;
+            color: yellow;
+            border-radius: 50%;
+            border: 1px solid gray;
+            padding: 3px;
+            width: 20px;
+            height: 15px;
+            text-align: center;
+          }
+          .cta {
+            background: #ffeb3b;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+            .cta, i {
+                font-size: 20px;
+            }
+          }
+          .contact {
+            margin-top: 120px;
+          }
+          .contact, h2 {
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-left: 20px;
+            .contact, p {
+                color: gray;
+                padding-left: 95px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            .overall {
+                display: flex;
+                .address {
+                    
+                }
+            }
+          }
     }
-}
